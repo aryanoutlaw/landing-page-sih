@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Doppler Target Classification</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="sih.css">
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="loading">
+        <div class="loading-text">Initializing system...</div>
+    </div>
+    <div class="radar-animation"></div>
+    <nav>
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="overview">Overview</a>
+        <a href="#" data-page="features">Features</a>
+        <a href="#" data-page="innovation">Innovation</a>
+        <a href="#" data-page="future">Future</a>
+    </nav>
+    
+    <div class="content" id="home">
+        <div class="glitch-container">
+            <h1 class="glitch">
+                Air-Guardian
+                <span aria-hidden="true">Air-Guardian</span>
+                <span aria-hidden="true">Air-Guardian</span>
+            </h1>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Advanced Target Classification System</p>
+        </div>
+        <div class="terminal">
+            <div class="terminal-header">System Status</div>
+            <div class="terminal-content" id="terminal-content">
+                <p>> Initializing Micro-Doppler Target Classification System...</p>
+                <p>> Loading Tiny VGG architecture...</p>
+                <p>> Calibrating PyTorch models...</p>
+                <p>> System ready for Smart India Hackathon.</p>
+                <p>> Welcome, Operator. Access granted.<span class="blinking-cursor">▋</span></p>
+            </div>
+            <div id="cta-container" style="display: none; margin-top: 20px; text-align: center;">
+                <a href="http://airguardian.streamlit.app" target="_blank" class="cta-button">Explore Solution</a>
+            </div>
+        </div>
+        <div class="info-box">
+            <h2>Mission Overview</h2>
+            <p>Our advanced Micro-Doppler Target Classification System is designed to enhance aerial security by accurately distinguishing between drones and birds. This cutting-edge technology utilizes deep learning algorithms to analyze micro-Doppler signatures, providing real-time threat assessment for security personnel.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <h3>Precise Detection</h3>
+                <p>Accurately classify micro-Doppler signatures with our state-of-the-art deep learning model</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <h3>Fast Processing</h3>
+                <p>Optimized for quick threat assessment, enabling rapid response to potential security risks</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <h3>Enhanced Security</h3>
+                <p>Improve situational awareness and bolster your defense against unauthorized aerial intrusions</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📱</div>
+                <h3>User-Friendly</h3>
+                <p>Intuitive interface for security personnel, ensuring ease of use in high-pressure situations</p>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="content hidden" id="overview">
+        <div class="section-content">
+            <h2>Overview</h2>
+            <p>Our Micro-Doppler Target Classification System is an advanced solution designed to address the growing need for accurate and efficient aerial threat detection. By leveraging cutting-edge machine learning techniques, we provide a robust tool for security personnel to quickly identify and classify potential threats.</p>
+            <h3>How It Addresses the Problem:</h3>
+            <ul>
+                <li>Doppler signatures of drones and birds.</li>
+                <li>Provides a user-friendly interface for security personnel.</li>
+                <li>Enables quick and reliable identification of potential drone threats.</li>
+                <li>Enhances overall situational awareness in security-sensitive areas.</li>
+            </ul>
+            <h3>Key Benefits:</h3>
+            <ul>
+                <li>Improved accuracy: Our system significantly reduces false positives and negatives.</li>
+                <li>Real-time processing: Get instant results for immediate action.</li>
+                <li>Scalable solution: Easily integrate with existing security infrastructure.</li>
+                <li>Cost-effective: Reduce the need for manual surveillance and associated costs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content hidden" id="features">
+        <div class="section-content">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Utilizes Tiny VGG architecture for efficient classification.</li>
+                <li>Trained using PyTorch framework for optimal performance.</li>
+                <li>Streamlit-based web application for easy deployment and use.</li>
+                <li>Advanced signal processing techniques for noise reduction.</li>
+                <li>Multi-target tracking capability for complex scenarios.</li>
+            </ul>
+            <h3>Implementation Details:</h3>
+            <ul>
+                <li>Deep learning model trained on diverse micro-Doppler signature dataset.</li>
+                <li>PyTorch used for model development and training, ensuring flexibility and efficiency.</li>
+                <li>Streamlit for creating an interactive, web-based user interface.</li>
+                <li>Continuous learning capabilities to adapt to new threats and patterns.</li>
+                <li>Integration with various radar systems for versatile deployment options.</li>
+            </ul>
+            <h3>Technical Specifications:</h3>
+            <ul>
+                <li>Model Architecture: Tiny VGG (Modified for micro-Doppler analysis)</li>
+                <li>Training Framework: PyTorch</li>
+                <li>Inference Time: &lt;100ms on standard hardware</li>
+                <li>Accuracy: &gt;98% on test dataset</li>
+                <li>Supported Platforms: Windows, Linux, macOS</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content hidden" id="innovation">
+        <div class="section-content">
+            <h2>Innovation and Uniqueness</h2>
+            <ul>
+                <li>Adaptation of Tiny VGG architecture for micro-Doppler analysis, a novel approach in the field.</li>
+                <li>Optimized model for balance between accuracy and computational efficiency.</li>
+                <li>Web-based solution for accessibility across different devices and locations.</li>
+                <li>Integration of advanced signal processing techniques with deep learning.</li>
+            </ul>
+            <h3>Competitive Advantages:</h3>
+            <ul>
+                <li>Lightweight model suitable for edge computing devices, enabling on-site processing.</li>
+                <li>Faster inference time compared to traditional CNN architectures.</li>
+                <li>Lower computational resource requirements, reducing hardware costs.</li>
+                <li>Scalable solution adaptable to various security scenarios and environments.</li>
+                <li>Continuous improvement through federated learning, ensuring up-to-date threat detection.</li>
+            </ul>
+            <h3>Research and Development:</h3>
+            <p>Our team of experts continually pushes the boundaries of micro-Doppler signal analysis and machine learning. Recent innovations include:</p>
+            <ul>
+                <li>Novel data augmentation techniques for improved model generalization.</li>
+                <li>Adaptive thresholding algorithms for dynamic environments.</li>
+                <li>Integration of transfer learning to quickly adapt to new types of aerial targets.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content hidden" id="future">
+        <div class="section-content">
+            <h2>Future Enhancements</h2>
+            <ul>
+                <li>Integration with live radar systems for real-time classification and tracking.</li>
+                <li>Expansion of model to classify different drone types and models.</li>
+                <li>Mobile app development for on-the-go threat assessment and notifications.</li>
+                <li>Implementation of explainable AI techniques for better decision-making support.</li>
+                <li>Development of a distributed sensor network for wide-area coverage.</li>
+            </ul>
+            <h3>Roadmap:</h3>
+            <ol>
+                <li>Q3 2024: Release of mobile application for iOS and Android.</li>
+                <li>Q4 2024: Integration with major commercial radar systems.</li>
+                <li>Q1 2025: Launch of cloud-based analytics platform for large-scale deployments.</li>
+                <li>Q2 2025: Introduction of AI-powered predictive threat analysis.</li>
+                <li>Q3 2025: Release of software development kit (SDK) for third-party integrations.</li>
+            </ol>
+            <p>Our team is committed to continuously improving and expanding the capabilities of our Micro-Doppler Target Classification System. We aim to stay at the forefront of aerial threat detection technology, providing cutting-edge solutions for enhanced security and peace of mind.</p>
+        </div>
+    </div>
+    <script src = "sih.js"></script>
+</body>
+</html>
